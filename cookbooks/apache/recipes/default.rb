@@ -14,6 +14,9 @@ end
 
 package 'httpd' do
         package_name package
+
+package 'httpd' do
+        package_name 'httpd'
         action install
 
 end
@@ -22,6 +25,6 @@ end
 service 'httpd' do
         service_name 'httpd'
         action [:start, :enable]
-
+   end
 
 end
